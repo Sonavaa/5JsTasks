@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 98%;
+}
+a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #666;
+}
+#header{
+margin-top: 20px;
+cursor: pointer;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.nav-left a{
+    margin: 0 10px;
+}
+ #karyera{
+    border: 1.5px solid #0056c1;
+    border-radius: 40px;
+    color: #0056c1!important;
+    display: inline-block;
+    font-weight: 500;
+    padding: 6px 12px;
+    margin-left: 20px;
+}
+.nav-right{
+    display: flex;
+    justify-content: space-between;
+}
+.box{
+margin:0  20px;
+}
+
