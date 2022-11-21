@@ -14,14 +14,14 @@
     <div class="container">
         <div class="nav-bar">
 
-            <div onmouseover="under_line" class="nav-left">
+            <div onmouseout = "no_line()" onmouseover = "under_line()" id="nav-left">
                 <a href="">Tender elanları</a>
                 <a href="">Haqqımızda</a>
                 <a href="">Tariflər</a>
                 <a href="">Xəbərlər</a>
-                <a href="">Xidmət şəbəkəsi</kbd></a>
+                <a href="">Xidmət şəbəkəsi</a>
                 <a href="">Onlayn xidmətlər</a>
-                <a onmouseover="portal" id="karyera" href="">Karyera portalı</a>
+                <a onmouseout = "smth()" onmouseover = "portal()" id="karyera" href="">Karyera portalı</a>
             </div>
 
             <div class="nav-right">
@@ -29,7 +29,21 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <a href="">Axtarış</a>
                 </div>
-                <a href="">AZ</a>
+
+                <!-- <div class="dropdown" class="dropbtn">
+                    <button id="myBtn">AZ</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="">EN</a>
+                      <a href="">RU</a>
+                      
+                    </div>
+                  </div> -->
+                <select id = "languages">  
+                    <option> AZ </option>  
+                    <option> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png" alt=""> EN </option>  
+                    <option> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Flag_of_Russia_%28bordered%29.svg/2560px-Flag_of_Russia_%28bordered%29.svg.png" alt=""> RU </option>  
+                      
+                    </select>  
                 <div class="box">
                 <i class="fa-solid fa-phone"></i>
                 <a href="">937</a>

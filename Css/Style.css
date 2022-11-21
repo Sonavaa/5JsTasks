@@ -20,13 +20,13 @@ cursor: pointer;
     justify-content: space-between;
     text-align: center;
 }
-.nav-left a{
+#nav-left a{
     margin: 0 10px;
 }
  #karyera{
     border: 1.5px solid #0056c1;
     border-radius: 40px;
-    color: #0056c1!important;
+    color: #0056c1;
     display: inline-block;
     font-weight: 500;
     padding: 6px 12px;
@@ -35,8 +35,11 @@ cursor: pointer;
 .nav-right{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .box{
 margin:0  20px;
 }
-
+#languages {
+    border: none;
+}
