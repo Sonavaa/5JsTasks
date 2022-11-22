@@ -11,14 +11,25 @@ function smth() {
 }
  
 
-function under_line() {
-    
-    document.getElementById("nav-left").style.textDecoration = "underline";
-    document.getElementById("nav-left").style.transition = "1s";
-    document.getElementById("nav-left").style.color("#666");
-}
 
-function no_line() {
-    document.getElementById("nav-left").style.textDecoration = "none"
+    
+
+
+function under_line() {
+    let mydiv = document.getElementById("nav-left");
+    let btns = document.getElementsByClassName("a");
+   
+    for (let i = 0; i < array.length; i++) {
+   
+       btns[i].addEventListener("onmouseover", function() {
+   
+           var current = document.getElementsByClassName("active");
+           current[0].className = current[0].className.replace(" active", "");
+           this.className += " active";
+       
+       });
+   
+     
+    }
 }
 

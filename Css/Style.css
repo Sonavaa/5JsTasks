@@ -30,7 +30,6 @@ cursor: pointer;
     display: inline-block;
     font-weight: 500;
     padding: 6px 12px;
-    margin-left: 20px;
 }
 .nav-right{
     display: flex;
@@ -42,4 +41,9 @@ margin:0  20px;
 }
 #languages {
     border: none;
+}
+.active{
+    text-decoration: underline;
+    color: #666;
+    transition: 1s;
 }
