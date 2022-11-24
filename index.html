@@ -14,20 +14,20 @@
     <div class="container">
         <div class="nav-bar">
 
-            <div onmouseout = "no_line()" onmouseover = "under_line()" id="nav-left">
+            <div  id="nav-left">
                 <a class="a active" href="">Tender elanları</a>
                 <a class="a" href="">Haqqımızda</a>
                 <a class="a" href="">Tariflər</a>
                 <a class="a" href="">Xəbərlər</a>
                 <a class="a" href="">Xidmət şəbəkəsi</a>
-                <a class="a" href="">Onlayn xidmətlər</a> </div>
+                <a class="a" href="">Onlayn xidmətlər</a> 
                 <a onmouseout = "smth()" onmouseover = "portal()" id="karyera" href="">Karyera portalı</a>
-        
+        </div>
 
             <div class="nav-right">
                 <div class="box">
                 <i class="fa-solid fa-magnifying-glass"></i>
-                <a href="">Axtarış</a>
+                <a id="searchBtn" href="">Axtarış</a>
                 </div>
 
                 <!-- <div class="dropdown" class="dropbtn">
@@ -38,8 +38,8 @@
                       
                     </div>
                   </div> -->
-                <select id = "languages">  
-                    <option> AZ </option>  
+                <select id="languages">  
+                    <option><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.countryflags.com%2Fazerbaijan-flag-icon%2F&psig=AOvVaw2xD7ATnI6dV9om5LmBHvfD&ust=1669356377470000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCNj6qZ-TxvsCFQAAAAAdAAAAABAE" alt=""> AZ </option>  
                     <option> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png" alt=""> EN </option>  
                     <option> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Flag_of_Russia_%28bordered%29.svg/2560px-Flag_of_Russia_%28bordered%29.svg.png" alt=""> RU </option>  
                       
@@ -52,7 +52,14 @@
         </div>
     </div>
 </div>
-
+<section id="search">
+<div class="container">
+    <div class="nav-search">
+        <input placeholder="Sizə necə kömək edə bilərik??" type="text">
+        <i id="mark" class="fa-solid fa-xmark"></i>
+    </div>
+</div>
+</section>
 
 <script src="Js/App.js"></script>
 </body>

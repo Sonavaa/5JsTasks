@@ -14,11 +14,12 @@ a{
 #header{
 margin-top: 20px;
 cursor: pointer;
+text-align: center;
 }
 .nav-bar{
     display: flex;
-    justify-content: space-between;
-    text-align: center;
+    justify-content: space-around;
+    
 }
 #nav-left a{
     margin: 0 10px;
@@ -27,9 +28,13 @@ cursor: pointer;
     border: 1.5px solid #0056c1;
     border-radius: 40px;
     color: #0056c1;
-    display: inline-block;
+    transition:  .5s;
     font-weight: 500;
     padding: 6px 12px;
+}
+#karyera:hover{
+    background-color: #0056c1;
+    color: white;
 }
 .nav-right{
     display: flex;
@@ -42,8 +47,41 @@ margin:0  20px;
 #languages {
     border: none;
 }
-.active{
-    text-decoration: underline;
-    color: #666;
-    transition: 1s;
+
+#nav-left .a{
+    position: relative;
 }
+
+#nav-left .a::after{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #666;
+    transition: .5s;
+
+}
+
+#nav-left .a:hover::after{
+    width: 100%;
+}
+.nav-search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+input{
+    margin-top: 80px;
+    padding: 50px 0;
+    font-size: 50px;
+    width: 80%;
+    border-style: none;
+}
+#mark{
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+
